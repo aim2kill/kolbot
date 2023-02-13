@@ -207,7 +207,7 @@ include("core/prototypes.js");
 			}
 		}
 		// No runeword for Orb w/ 2 sockets (remove lowquality items??)
-		if (!unit.runeword && ((unit.sockets >= 2 && unit.itemType !== sdk.items.type.Orb) || (unit.itemType === sdk.items.type.Orb && unit.sockets === 3)) && (unit.lowquality || unit.normal || unit.superior)) {
+		if (!unit.runeword && ((unit.sockets >= 2 && unit.itemType !== sdk.items.type.Orb) || (unit.itemType === sdk.items.type.Orb && unit.sockets === 3)) && (unit.lowQuality || unit.normal || unit.superior)) {
 			this.hooks.push(new Text("Possible RW:", rwx, rwy, + 8, 13, 2));
 
 			switch (unit.itemType) {
